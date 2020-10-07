@@ -1,13 +1,12 @@
 class Items {
-  constructor (inst, tname, type, title, tcredit, eqname, eqcredit, startdate) {
-    this.inst = inst
-    this.tname = tname
+  constructor (col1, col2, type, col3, col4, col5, col6) {
+    this.col1 = col1
+    this.col2 = col2
     this.type = type
-    this.title = title
-    this.tcredit = tcredit
-    this.eqname = eqname
-    this.eqcredit = eqcredit
-    this.startdate = startdate
+    this.col3 = col3
+    this.col4 = col4
+    this.col5 = col5
+    this.col6 = col6
   }
 }
 
@@ -334,8 +333,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   function sortNames (array) {
     array.sort(function (a, b) {
-      var nameA = a.title.toLowerCase()
-      var nameB = b.title.toLowerCase()
+      var nameA = a.col3.toLowerCase()
+      var nameB = b.col3.toLowerCase()
       // sort string ascending
       if (nameA < nameB) {
         return -1
@@ -369,7 +368,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   function makeitem (item) {
     var tmp = ''
 
-    tmp += '<tr><td>' + item.title + '</td><td>' + item.inst + '</td><td>' + item.tname + '</td><td>' + item.tcredit + '</td><td>' + item.eqname + '</td><td>' + item.eqcredit + '</td></tr>'
+    tmp += '<tr><td>' + item.col3 + '</td><td>' + item.col1 + '</td><td>' + item.col2 + '</td><td>' + item.col4 + '</td><td>' + item.col5 + '</td><td>' + item.col6 + '</td></tr>'
 
     return tmp
   }

@@ -1,0 +1,227 @@
+html {
+  background-color: #fafafa;
+}
+.main-content {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: Verdana, sans-serif;
+}
+.main-search-box {
+  font-size: 12px;
+}
+.main-search-box .search-box {
+  height: 35px;
+  border: 1px solid;
+  border-radius: 15px 15px 15px 15px;
+  width: 210px;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  padding-top: 2px;
+  padding-left: 5px;
+  background-color: white;
+  float: left;
+}
+.main-search-box #myInput {
+  border: 0;
+  width: 80%;
+}
+.main-search-box #searchby {
+  height: 35px;
+  width: 210px;
+}
+.main-search-box .icon-search {
+  color: #90132b;
+  width: 20px;
+}
+.main-content #search-links > ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+.main-content #search-links > ul > li {
+  display: inline-block;
+  padding: 5px 0px;
+  width: 10%;
+  vertical-align: middle;
+  font-size: 1.0rem;
+}
+@media screen and (max-width: 567px) {
+  .main-content #search-links > ul > li {
+    width: 10%;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-content #search-links > ul > li {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-content #search-links > ul > li {
+    width: 3.3%;
+  }
+}
+.main-content #search-links > ul > li .active {
+  color: black;
+}
+.main-content #search-links > ul > li > a {
+  color: #101357;
+  text-decoration: none;
+}
+.main-content #search-links > ul > li > a:hover {
+  color: black;
+}
+.main-content #main-table {
+  min-height: 1000px;
+}
+.main-content #main-table table {
+  border-collapse: collapse;
+  letter-spacing: 1px;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+.main-content #main-table table td,
+.main-content #main-table table th {
+  border: 1px solid #dcdcdc;
+  padding: 0;
+}
+@media screen and (max-width: 567px) {
+  .main-content #main-table table td,
+  .main-content #main-table table th {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-content #main-table table td,
+  .main-content #main-table table th {
+    padding: 5px 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-content #main-table table td,
+  .main-content #main-table table th {
+    padding: 10px 20px;
+  }
+}
+.main-content #main-table table th {
+  background-color:#101357;
+  color: white;
+  text-align: center;
+}
+.main-content #main-table table tr td:first-child {
+  border-left: 0;
+}
+.main-content #main-table table tr:last-child td {
+  border-bottom: 0;
+}
+.main-content #main-table table tr td:last-child {
+  border-right: 0;
+}
+button {
+  font-family: "Verdana";
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0px 10px 4px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: #444444;
+  border: 1px solid #ced3d6;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+button:hover {
+  transform: scale(1.1);
+}
+button #clearFilter {
+  float: right;
+}
+span #clearFilter {
+  float: right;
+  font-family: "Verdana";
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0px 10px 4px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: #444444;
+  border: 1px solid #ced3d6;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+span #clearFilter:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 567px) {
+  button {
+    padding: 4px 15px;
+    float: left;
+  }
+  span #clearFilter {
+    width: 97%;
+    padding: 4px 15px;
+  }
+  #index.box span {
+    font-size: 10px;
+  }
+}
+#loader {
+  /*position: absolute;*/
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #90132b;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+#index div span {
+  color: #90132b;
+}
+#index span {
+  font-size: 14px;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (min-width: 400px) {
+  .main-content #search-links ul li {
+    width: 7.1%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .main-content #search-links ul li {
+    width: 3%;
+  }
+}

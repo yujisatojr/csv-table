@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="/js/papaparse.js"></script>
+        <script type="text/javascript" src="/js/csv-loader.js"></script>
+    </header>
+    <div class="main-content">
+
+        <div class="container">
+
+            <div id="loader"></div>
+
+            <div class="main-search-box">
+                <div class="search-box">
+                    <input type="text" class="searchfor" id="myInput" onfocus="this.value=''" placeholder="Search for names" title="Type in a name">
+                    <svg class="icon-search"><use xlink:href="#icon-search" /></svg>
+                </div>
+                <div class="filter-dropdown">
+                <select name="searchby" class="searchbybox" id="searchby">
+                    <option value="coursetitile">Transfer Course Title</option>
+                    <option value="coursename">Transfer Course Name</option>
+                    <option value="eqcourse">Equivalent Course</option>
+                    <option value="instname">Institution Name</option>
+                </select>
+                </div>
+            </div>
+
+            <div id="search-links">
+                <ul>
+                    <li><a href="#" id="filterA">A</a></li>
+                    <li><a href="#" id="filterB">B</a></li>
+                    <li><a href="#" id="filterC">C</a></li>
+                    <li><a href="#" id="filterD">D</a></li>
+                    <li><a href="#" id="filterE">E</a></li>
+                    <li><a href="#" id="filterF">F</a></li>
+                    <li><a href="#" id="filterG">G</a></li>
+                    <li><a href="#" id="filterH">H</a></li>
+                    <li><a href="#" id="filterI">I</a></li>
+                    <li><a href="#" id="filterJ">J</a></li>
+                    <li><a href="#" id="filterK">K</a></li>
+                    <li><a href="#" id="filterL">L</a></li>
+                    <li><a href="#" id="filterM">M</a></li>
+                    <li><a href="#" id="filterN">N</a></li>
+                    <li><a href="#" id="filterO">O</a></li>
+                    <li><a href="#" id="filterP">P</a></li>
+                    <li><a href="#" id="filterQ">Q</a></li>
+                    <li><a href="#" id="filterR">R</a></li>
+                    <li><a href="#" id="filterS">S</a></li>
+                    <li><a href="#" id="filterT">T</a></li>
+                    <li><a href="#" id="filterU">U</a></li>
+                    <li><a href="#" id="filterV">V</a></li>
+                    <li><a href="#" id="filterW">W</a></li>
+                    <li><a href="#" id="filterX">X</a></li>
+                    <li><a href="#" id="filterY">Y</a></li>
+                    <li><a href="#" id="filterZ">Z</a></li>
+                    <li class="active" id="highlight"></li>
+                </ul>
+            </div>
+
+            <div id="index" class="box"></div>
+            <div id="main-table"></div>
+        </div>
+    </div>
+</html>

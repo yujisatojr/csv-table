@@ -1,8 +1,7 @@
 class Items {
-  constructor (col1, col2, type, col3, col4, col5, col6) {
+  constructor (col1, col2, col3, col4, col5, col6) {
     this.col1 = col1
     this.col2 = col2
-    this.type = type
     this.col3 = col3
     this.col4 = col4
     this.col5 = col5
@@ -56,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
           }
         }
       } else if (filter === 3) {
-        td = tr[i].getElementsByTagName('td')[5]
+        td = tr[i].getElementsByTagName('td')[4]
         if (td) {
           txtValue = td.textContent || td.innerText
           if (txtValue.toUpperCase().indexOf(index) > -1) {
@@ -181,143 +180,142 @@ document.addEventListener('DOMContentLoaded', function (event) {
     var majorcsvArray = []
 
     for (var i = 0; i < setupArray['data'].length; i++) {
-      var type = ''
 
       if (choice === 'all') {
         if (setupArray['data'][i]['Name'] !== '') {
           if (setupArray['data'][i]['Name'] !== ' ') {
-            majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+            majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
           }
         }
       } else if (choice === 'a') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith(choice.toUpperCase)) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'b') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('B')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'c') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('C')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'd') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('D')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'e') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('E')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'f') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('F')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'g') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('G')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'h') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('H')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'i') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('I')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'j') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('J')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'k') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('K')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'l') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('L')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'm') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('M')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'n') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('N')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'o') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('O')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'p') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('P')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'q') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('Q')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'r') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('R')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 's') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('S')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 't') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('T')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'u') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('U')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'v') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('V')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'w') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('W')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'x') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('X')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'y') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('Y')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       } else if (choice === 'z') {
         console.log(choice)
         if (setupArray['data'][i]['Name'].startsWith('Z')) {
-          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], type, setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
+          majorcsvArray.push(new Items(setupArray['data'][i]['Author'], setupArray['data'][i]['Rating'], setupArray['data'][i]['Name'], setupArray['data'][i]['Enrollment'], setupArray['data'][i]['Difficulty'], setupArray['data'][i]['URL']))
         }
       }
     }
@@ -347,12 +345,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   function setuplist (array) {
     var tmp = ''
-    var type = ''
     tmp += '<div class="row"><table id="myTable" style="display:none;"><colgroup><col span="1" style="width: 15%;"><col span="1" style="width: 15%;"><col span="1" style="width: 8%;"><col span="1" style="width: 8%;"><col span="1" style="width: 8%;"><col span="1" style="width: 15%;"></colgroup><tbody><tr><th>Course Title</th><th>Author</th><th>Rating</th><th>Enrollment</th><th>Difficulty</th><th>URL</th></tr>'
     array.forEach(function (element, idx, arr) {
-      if (type === '') {
-        tmp += makeitem(element)
-      }
+      tmp += makeitem(element)
     })
     tmp += '</tbody></table></div>'
     document.getElementById('main-table').innerHTML = tmp

@@ -10,35 +10,24 @@ html {
   font-size: 12px;
 }
 .main-search-box .search-box {
-  height: 35px;
-  border: 1px solid;
-  border-radius: 15px 15px 15px 15px;
   width: 210px;
-  margin-right: 2%;
-  margin-bottom: 1%;
-  padding-top: 2px;
-  padding-left: 5px;
   background-color: white;
   float: left;
 }
 .main-search-box #myInput {
-  border: 0;
-  width: 80%;
+  width: 90%;
+  height: 30px;
 }
 .main-search-box #searchby {
   height: 35px;
   width: 210px;
 }
-.main-search-box .icon-search {
-  color: #90132b;
-  width: 20px;
+.main-content #search-links {
+  text-align: center;
 }
 .main-content #search-links > ul {
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  justify-content: flex-start;
+  /*display: flex;*/
   font-weight: bold;
 }
 .main-content #search-links > ul > li {
@@ -46,7 +35,7 @@ html {
   padding: 5px 0px;
   width: 10%;
   vertical-align: middle;
-  font-size: 1.0rem;
+  font-size: 0.8rem;
 }
 @media screen and (max-width: 567px) {
   .main-content #search-links > ul > li {
@@ -75,7 +64,7 @@ html {
   color: black;
 }
 .main-content #main-table {
-  min-height: 1000px;
+  margin-top: 2%;
 }
 .main-content #main-table table {
   border-collapse: collapse;
@@ -184,15 +173,15 @@ span #clearFilter:hover {
   height: 70px;
   border: 8px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 10px solid #90132b;
+  border-top: 10px solid #101357;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
 #index div span {
-  color: #90132b;
+  color: #101357;
 }
 #index span {
-  font-size: 14px;
+  font-size: 12px;
 }
 @-webkit-keyframes spin {
   0% {
